@@ -11,7 +11,6 @@ S[a]ir
 
 saldo = 0
 limite = 500
-extrato = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
 
@@ -44,7 +43,7 @@ while True:
             print("Depósito realizado com sucesso.\n")
 
     elif opcao == "S":
-        if numero_saques >= 3:
+        if numero_saques >= LIMITE_SAQUES:
             print("\nNão é mais permitido fazer saques hoje.")
         else:
             saque = 0
